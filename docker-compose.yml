@@ -9,9 +9,9 @@ version: '3'
 services: 
   redis-server:
     image: 'docker.io/redis:6.2.6-bullseye'
-    restart: always
+    restart: on-failure
   node-app:
-    restart: always
+    restart: on-failure
     build: .
     ports:
       - '4001:8081'
