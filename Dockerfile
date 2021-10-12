@@ -5,7 +5,7 @@
 # \____/  \___/  \__,_||___/|_| |_| |_||_| \__||_| |_|                                      
 #                         
 
-FROM node:alpine
+FROM docker.io/node:alpine
 
 WORKDIR '/app'
 
