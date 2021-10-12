@@ -9,7 +9,9 @@ version: '3'
 services: 
   redis-server:
     image: 'docker.io/redis:6.2.6-bullseye'
+    restart: always
   node-app:
+    restart: always
     build: .
     ports:
       - '4001:8081'
